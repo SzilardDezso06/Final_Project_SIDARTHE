@@ -5,7 +5,7 @@ D - Diagnosed
 A - Ailing
 R - Recognized
 T - Threatened
-H - Heded
+H - Healed
 E - Extinct
 
 The parameters alpha, beta, gamma, and delta represent the disease transmission rates between a susceptible person and individuals who are infected, diagnosed, ailing, or recognized, respectively
@@ -48,3 +48,14 @@ dT/dt = mu*A + nu*R - (sigma + tau)*T
 dH/dt = llambda*I + rho*D + kappa*A + xi*R + sigma*T
 
 dE/dt = tau*T
+
+
+# Defining R0 reproduction number
+
+r1 = epsilon + zeta + llambda
+r2 = eta + rho
+r3 = theta + mu + kappa
+r4 = nu + xi
+r5 = sigma + tau
+
+R0 = alpha/r1 + (beta*epsilon)/(r1*r2) + (gamma*zeta)/(r1*r3) + (delta*eta*epsilon)/(r1*r2*r4) + (delta*zeta*theta)/(r1*r3*r4)
