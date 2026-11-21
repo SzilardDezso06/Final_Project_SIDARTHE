@@ -59,3 +59,6 @@ r4 = nu + xi
 r5 = sigma + tau
 
 R0 = alpha/r1 + (beta*epsilon)/(r1*r2) + (gamma*zeta)/(r1*r3) + (delta*eta*epsilon)/(r1*r2*r4) + (delta*zeta*theta)/(r1*r3*r4)
+
+
+# y = [S, I, D, A, R, T, H, E]
